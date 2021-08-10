@@ -1,0 +1,7 @@
+{
+  "name": "emovils2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
