@@ -15,7 +15,15 @@
   </ion-header>
 
   <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-segment>
+      <ion-segment-button (click)="btnUpdateLocation(true)">Activate</ion-segment-button>
+      <ion-segment-button (click)="btnUpdateLocation(false)">Pause</ion-segment-button>
+  </ion-segment>
+  <div class="map-container">
+    <div class="map-frame">
+      <div id="mapId"></div>
+    </div>
   </div>
+  </div>
+
 </ion-content>
